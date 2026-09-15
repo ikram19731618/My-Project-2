@@ -1,9 +1,94 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Software — Al-Muamroon</title><link rel="stylesheet" href="style.css"></head><body>
-    <header class="nav"><div class="container navrow">
-      <a class="logo" href="index.html">AL-MUAMROON<small>TRADING EST. • SINCE 2005</small></a>
-      <nav class="links">
-        <a href="about.html">About</a><a href="services.html">Services</a><a href="software.html">Software</a>
-        <a href="materials.html">Materials</a><a href="contact.html">Contact</a>
-      </nav><button class="menu">MENU</button>
-    </div></header><main class="pagehero"><div class="container"><span class="eyebrow">03 / Software</span><h1>Software that<br>works for you.</h1><p class="hero-copy">Our current portfolio is focused on genuine business, creative, PDF and CAD software solutions.</p></div></main>
-<section class="section light"><div class="container"><span class="eyebrow">Current portfolio</span><h2 style="margin-top:18px">Technology for everyday work.</h2><div class="portfolio"><div class="brand">Adobe</div><div class="brand">Nitro</div><div class="brand">Microsoft</div><div class="brand">ZWCAD</div><div class="brand">WinZip</div><div class="brand">WinRAR</div></div><div class="grid3" style="margin-top:40px"><div class="card" style="color:#111;background:#fff"><span class="num">CREATIVE</span><h3>Adobe</h3><p>Creative Cloud, Photoshop, Illustrator, Premiere Pro, Acrobat and related solutions.</p></div><div class="card" style="color:#111;background:#fff"><span class="num">DOCUMENTS</span><h3>Nitro</h3><p>PDF creation, editing, conversion, OCR and e-signature capabilities.</p></div><div class="card" style="color:#111;background:#fff"><span class="num">PRODUCTIVITY & CAD</span><h3>Microsoft + ZWCAD</h3><p>Productivity software and CAD tools for business, engineering and design workflows.</p></div></div></div></section><footer><div class="container foot"><span>© 2026 Al-Muamroon Trading Est. All rights reserved.</span><span>SAUDI ARABIA • BUSINESS EXCELLENCE</span></div></footer><script src="script.js"></script></body></html>
+<!-- Inside software.html, replace the old software list with this: -->
+
+<section class="software-section">
+    <h1 style="text-align:center; margin-bottom: 3rem;">Our Software Portfolio</h1>
+    
+    <div class="software-grid">
+        <!-- Microsoft -->
+        <div class="software-card">
+            <div class="software-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/512px-Microsoft_logo.svg.png" alt="Microsoft Logo">
+            </div>
+            <h3>Microsoft</h3>
+            <p>Genuine Windows and Office licensing for homes and businesses. Includes Windows 11 Pro, Microsoft 365, and Office 2021.</p>
+        </div>
+
+        <!-- ZWSOFT (formerly ZWCAD) -->
+        <div class="software-card">
+            <div class="software-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/ZWSOFT_logo.png/512px-ZWSOFT_logo.png" alt="ZWSOFT Logo">
+            </div>
+            <h3>ZWSOFT</h3>
+            <p>Professional CAD solutions including ZWCAD and ZW3D. Affordable, compatible, and powerful design tools for engineers and architects.</p>
+        </div>
+
+        <!-- WinZip -->
+        <div class="software-card">
+            <div class="software-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/WinZip_logo.svg/512px-WinZip_logo.svg.png" alt="WinZip Logo">
+            </div>
+            <h3>WinZip</h3>
+            <p>The world's leading file compression tool. Zip, encrypt, and share files securely with ease.</p>
+        </div>
+
+        <!-- WinRAR -->
+        <div class="software-card">
+            <div class="software-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WinRAR_Logo.svg/512px-WinRAR_Logo.svg.png" alt="WinRAR Logo">
+            </div>
+            <h3>WinRAR</h3>
+            <p>Powerful archive management. Compress, encrypt, and split archives with the industry-standard RAR format.</p>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Add this to your style.css or in a <style> tag */
+    .software-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        padding: 0 2rem 4rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .software-card {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 16px;
+        padding: 2rem;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+        backdrop-filter: blur(10px);
+    }
+    .software-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+        background: rgba(255, 255, 255, 0.1);
+        border-color: rgba(255, 255, 255, 0.3);
+    }
+    .software-logo img {
+        height: 60px;
+        width: auto;
+        margin-bottom: 1rem;
+        object-fit: contain;
+    }
+    .software-card h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.75rem;
+        color: #fff;
+    }
+    .software-card p {
+        color: #ccc;
+        line-height: 1.6;
+        font-size: 0.95rem;
+    }
+    /* If the logos are white on transparent, add a white background to the logo div */
+    .software-logo {
+        background: #fff;
+        border-radius: 12px;
+        padding: 1rem;
+        display: inline-block;
+        margin-bottom: 1rem;
+    }
+</style>
