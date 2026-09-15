@@ -47,3 +47,85 @@ footer{padding:40px 0;color:var(--muted);font-size:.78rem}.foot{display:flex;jus
 .intro{position:fixed;inset:0;background:#050c15;z-index:100;display:grid;place-items:center;animation:introOut 1s 2.4s forwards}.intro-inner{text-align:center}.intro-logo{font:800 clamp(3rem,10vw,9rem) Manrope;letter-spacing:-.08em}.intro-line{width:0;height:1px;background:var(--gold);margin:20px auto;animation:line 1.2s .4s forwards}.intro small{color:var(--gold);letter-spacing:.3em;font-size:.65rem}@keyframes line{to{width:180px}}@keyframes introOut{to{opacity:0;visibility:hidden;pointer-events:none}}
 @media(max-width:900px){.links{display:none}.menu{display:block}.grid2,.contact{grid-template-columns:1fr}.grid3{grid-template-columns:1fr 1fr}.photo{height:430px}.stats{grid-template-columns:1fr 1fr}.portfolio{grid-template-columns:repeat(2,1fr)}.service{grid-template-columns:70px 1fr}}
 @media(max-width:600px){.container{width:min(100% - 32px,var(--max))}.section{padding:80px 0}.grid3{grid-template-columns:1fr}.hero-content{padding-top:160px}.scroll{display:none}.stats{grid-template-columns:1fr 1fr}.stat:nth-child(2){border-right:0}.stat:nth-child(-n+2){border-bottom:1px solid #d9cfbe}}
+/* ============================================================
+   IT Materials Grid (materials.html)
+   ============================================================ */
+.it-materials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.it-card {
+  position: relative;
+  display: block;
+  height: 340px;
+  border-radius: 14px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #fff;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.it-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.35);
+}
+
+.it-card-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.7s ease;
+}
+
+.it-card:hover .it-card-bg {
+  transform: scale(1.08);
+}
+
+.it-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.35) 55%, rgba(0,0,0,0.05) 100%);
+  z-index: 1;
+}
+
+.it-card-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 24px;
+}
+
+.it-card-num {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #d4b483;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.it-card-content h3 {
+  margin: 0 0 6px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.it-card-content p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: rgba(255,255,255,0.85);
+}
+
+@media (max-width: 640px) {
+  .it-card { height: 280px; }
+  .it-card-content h3 { font-size: 1.25rem; }
+}
