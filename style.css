@@ -221,3 +221,36 @@ body.about-page::before {
   .software-card { padding: 1.5rem; }
 }
 
+/* ============================================================
+   Services — Mobile layout fix
+   ============================================================ */
+@media (max-width: 900px) {
+  .service {
+    display: block;
+    padding: 28px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .service code {
+    display: block;
+    color: var(--gold);
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    margin-bottom: 6px;
+  }
+  .service h3 {
+    display: block;
+    font-size: 1.4rem;
+    margin: 0 0 12px 0;
+    line-height: 1.2;
+  }
+  .service p {
+    display: block;
+    margin: 0;
+    line-height: 1.75;
+    font-size: 0.98rem;
+    max-width: 100%;
+    word-break: normal;
+    overflow-wrap: normal;
+    hyphens: none;
+  }
+}
