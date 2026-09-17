@@ -274,7 +274,7 @@ body.about-page::before {
 }
 
 @media (max-width: 640px) {
-  .intro-mark { width: 100px; height: 100px; }
+  .intro-mark { width: 500px; height: 500px; }
 }
 
 @keyframes introMarkIn {
