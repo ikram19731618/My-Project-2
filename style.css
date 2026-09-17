@@ -22,31 +22,11 @@ p{line-height:1.75;color:#c2ccd7}.eyebrow{font-size:.72rem;letter-spacing:.18em;
 .links{display:flex;gap:28px;font-size:.84rem}.links a{opacity:.8}.links a:hover{opacity:1;color:var(--gold)}
 .menu{display:none;background:none;border:1px solid var(--line);color:#fff;padding:9px 12px}
 .hero{min-height:100vh;position:relative;display:grid;align-items:end;overflow:hidden}
-.hero:before{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:
-    linear-gradient(90deg,rgba(7,17,31,.95) 0%,rgba(7,17,31,.55) 52%,rgba(7,17,31,.22)),
-    url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=2200&q=85") center/cover;
-  animation: heroFade 32s linear infinite;
-  background-size: cover;
-}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,17,31,.85) 0%,rgba(7,17,31,.45) 52%,rgba(7,17,31,.15));z-index:1;pointer-events:none}
 
-@keyframes heroFade {
-  0%, 25%   { background-image:
-    linear-gradient(90deg,rgba(7,17,31,.95) 0%,rgba(7,17,31,.55) 52%,rgba(7,17,31,.22)),
-    url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=2200&q=85"); }
-  25.01%, 50%   { background-image:
-    linear-gradient(90deg,rgba(7,17,31,.95) 0%,rgba(7,17,31,.55) 52%,rgba(7,17,31,.22)),
-    url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=2200&q=85"); }
-  50.01%, 75%   { background-image:
-    linear-gradient(90deg,rgba(7,17,31,.95) 0%,rgba(7,17,31,.55) 52%,rgba(7,17,31,.22)),
-    url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=2200&q=85"); }
-  75.01%, 100%   { background-image:
-    linear-gradient(90deg,rgba(7,17,31,.95) 0%,rgba(7,17,31,.55) 52%,rgba(7,17,31,.22)),
-    url("https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=2200&q=85"); }
-}
+.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+
+.hero-content{position:relative;z-index:2}
 .hero:after{content:"";position:absolute;inset:auto 0 0;height:35%;background:linear-gradient(transparent,var(--navy))}
 .hero-content{position:relative;z-index:2;padding:180px 0 90px;max-width:1050px}
 .hero h1 span{color:var(--gold)}.hero-copy{max-width:650px;font-size:1.05rem}
