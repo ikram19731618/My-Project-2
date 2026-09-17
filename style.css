@@ -17,7 +17,8 @@ p{line-height:1.75;color:#c2ccd7}.eyebrow{font-size:.72rem;letter-spacing:.18em;
 .btn.gold{background:var(--gold);color:#111;border-color:var(--gold)}.btn:hover{transform:translateY(-3px);box-shadow:0 14px 35px rgba(0,0,0,.25)}
 .nav{position:fixed;z-index:50;top:0;left:0;right:0;padding:20px 0;background:linear-gradient(180deg,rgba(7,17,31,.96),rgba(7,17,31,.55),transparent);backdrop-filter:blur(8px)}
 .navrow{display:flex;align-items:center;justify-content:space-between;gap:25px}
-.logo{font-family:Manrope;font-weight:800;letter-spacing:.04em;font-size:1.1rem}.logo small{display:block;color:var(--gold);font:600 .55rem "DM Sans";letter-spacing:.2em;margin-top:3px}
+.logo{font-family:Manrope;font-weight:800;letter-spacing:.04em;font-size:1.1rem;display:flex;align-items:center;gap:10px}
+.logo-img{height:34px;width:auto}
 .links{display:flex;gap:28px;font-size:.84rem}.links a{opacity:.8}.links a:hover{opacity:1;color:var(--gold)}
 .menu{display:none;background:none;border:1px solid var(--line);color:#fff;padding:9px 12px}
 .hero{min-height:100vh;position:relative;display:grid;align-items:end;overflow:hidden}
