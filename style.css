@@ -335,8 +335,16 @@ body { overflow-x: hidden; }
   z-index: 1;
   pointer-events: none;
 }
-
-/* Mobile: hide video, show static image instead */
+/* ADD mobile hero background image */
 @media (max-width: 768px) {
   .hero-video { display: none; }
+  .hero {
+    background:
+      linear-gradient(90deg, rgba(7,17,31,.85) 0%, rgba(7,17,31,.55) 52%, rgba(7,17,31,.3)),
+      url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=85")
+      center/cover no-repeat;
+  }
+  .hero:before {
+    background: linear-gradient(180deg, rgba(7,17,31,.35) 0%, rgba(7,17,31,.85) 100%);
+  }
 }
