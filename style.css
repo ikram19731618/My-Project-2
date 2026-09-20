@@ -410,7 +410,7 @@ body { overflow-x: hidden; }
 
 /* 4. CrowdStrike (image or text) */
 .software-card:nth-child(4) .software-logo img {
-  height: 70px !important;
+  height: 700px !important;
   max-height: 150px !important;
 }
 .software-card:nth-child(4) .software-logo {
