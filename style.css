@@ -362,3 +362,26 @@ body { overflow-x: hidden; }
     z-index: 4 !important;
   }
 }
+
+/* ============================================================
+   Force logo images to scale up inside their white boxes
+   ============================================================ */
+.software-logo img {
+  height: 60px !important;
+  width: auto !important;
+  max-height: 60px !important;
+  max-width: 140px !important;
+  object-fit: contain !important;
+  display: block !important;
+  margin: 0 auto !important;
+}
+
+/* Bigger white box to give the logo room to breathe */
+.software-logo {
+  min-width: 130px !important;
+  min-height: 90px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 1.2rem 1.5rem !important;
+}
