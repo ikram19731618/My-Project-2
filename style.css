@@ -364,83 +364,82 @@ body { overflow-x: hidden; }
 }
 
 /* ============================================================
-   Per-logo sizing — adjust heights as needed
-   Order in software.html: 1.Adobe 2.ZWSOFT 3.Acronis 4.CrowdStrike
-                           5.Nitro 6.Microsoft 7.WinZip 8.WinRAR 9.Many More
+   Software logos — individual sizes per card
+   Order: 1.Adobe 2.ZWSOFT 3.Acronis 4.CrowdStrike
+          5.Nitro 6.Microsoft 7.WinZip 8.WinRAR 9.ManyMore
    ============================================================ */
 
-/* Base rule — size for all image-based logos */
-.software-logo img {
-  height: 60px !important;
-  width: auto !important;
-  max-height: 60px !important;
-  max-width: 140px !important;
-  object-fit: contain !important;
-  display: block !important;
-  margin: 0 auto !important;
-}
-
-/* Base rule — uniform white box behind every logo */
-.software-logo {
-  min-width: 130px !important;
-  min-height: 90px !important;
+/* Base — the white box behind every logo */
+.software-card .software-logo {
+  min-width: 150px !important;
+  min-height: 100px !important;
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
   padding: 1.2rem 1.5rem !important;
 }
 
-/* ---------- Individual overrides ---------- */
+/* Base — the image inside every logo box */
+.software-card .software-logo img {
+  height: auto !important;
+  object-fit: contain !important;
+  display: block !important;
+  margin: 0 auto !important;
+}
+
+/* ---------- Per-logo image sizes (change width to resize) ---------- */
 
 /* 1. Adobe */
 .software-card:nth-child(1) .software-logo img {
-  height: 60px !important;
-  max-height: 60px !important;
+  width: 100px !important;
+  max-width: 100px !important;
+  max-height: 70px !important;
 }
 
-/* 2. ZWSOFT (text badge) */
+/* 2. ZWSOFT — text badge */
 .software-card:nth-child(2) .software-logo {
   font-size: 1.5rem !important;
 }
 
-/* 3. Acronis (text badge) */
+/* 3. Acronis — text badge */
 .software-card:nth-child(3) .software-logo {
   font-size: 1.4rem !important;
 }
 
-/* 4. CrowdStrike (image or text) */
+/* 4. CrowdStrike — image */
 .software-card:nth-child(4) .software-logo img {
-  height: 700px !important;
-  max-height: 150px !important;
-}
-.software-card:nth-child(4) .software-logo {
-  font-size: 1.3rem !important;
+  width: 130px !important;
+  max-width: 130px !important;
+  max-height: 85px !important;
 }
 
-/* 5. Nitro (text badge) */
+/* 5. Nitro — text badge */
 .software-card:nth-child(5) .software-logo {
-  font-size: 1.6rem !important;
+  font-size: 1.7rem !important;
 }
 
-/* 6. Microsoft */
+/* 6. Microsoft — image */
 .software-card:nth-child(6) .software-logo img {
-  height: 55px !important;
-  max-height: 55px !important;
-}
-
-/* 7. WinZip */
-.software-card:nth-child(7) .software-logo img {
-  height: 65px !important;
+  width: 90px !important;
+  max-width: 90px !important;
   max-height: 65px !important;
 }
 
-/* 8. WinRAR */
-.software-card:nth-child(8) .software-logo img {
-  height: 50px !important;
-  max-height: 50px !important;
+/* 7. WinZip — image */
+.software-card:nth-child(7) .software-logo img {
+  width: 105px !important;
+  max-width: 105px !important;
+  max-height: 75px !important;
 }
 
-/* 9. Many More (text badge) */
+/* 8. WinRAR — image */
+.software-card:nth-child(8) .software-logo img {
+  width: 120px !important;
+  max-width: 120px !important;
+  max-height: 75px !important;
+}
+
+/* 9. Many More — text badge */
 .software-card:nth-child(9) .software-logo {
   font-size: 1.2rem !important;
 }
