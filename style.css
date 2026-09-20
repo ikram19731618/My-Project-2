@@ -412,9 +412,9 @@ body { overflow-x: hidden; }
 
 /* 4. CrowdStrike — image */
 .software-card:nth-child(4) .software-logo img {
-  width: 120px !important;
-  max-width: 120px !important;
-  max-height: 80px !important;
+  width: 130px !important;
+  max-width: 130px !important;
+  max-height: 85px !important;
 }
 
 /* 5. Nitro — text badge */
