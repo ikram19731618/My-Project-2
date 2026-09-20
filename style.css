@@ -402,8 +402,12 @@ body { overflow-x: hidden; }
 }
 
 /* 3. Acronis — text badge */
-.software-card:nth-child(3) .software-logo {
-  font-size: 1.4rem !important;
+/* 3. Acronis — image */
+.software-card:nth-child(3) .software-logo img {
+  width: 120px !important;
+  max-width: 120px !important;
+  max-height: 80px !important;
+}
 }
 
 /* 4. CrowdStrike — image */
